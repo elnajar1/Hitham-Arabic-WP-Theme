@@ -14,9 +14,9 @@ body{
 /* Start color scema */
 :root{
 
-  --primary   : #5D737E;
-  --secondary : #64B6AC ;
-  --light     : #FCFFFD;
+  --primary   : #279AF1;
+  --secondary : #C49991 ;
+  --light     : #F7F7FF;
   --muted     : #DAFFEF;
   --blue      : rgb(100,98,242);
 }
