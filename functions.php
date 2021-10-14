@@ -98,11 +98,11 @@
   function custome_post_title_acf_name( $field ) {
        if( is_page( 'page-add-job' ) ) { // if on the vendor page
             $field['label'] = 'اسم المحل (المتجر /الدكان) ';
-       } elseif( is_page( 'add-employee' ) ) {
+       }/* elseif( is_page( 'page-add-employee' ) ) {
             $field['label'] = 'الاسم';
        }else{
          return $field;
-       }
+       }*/
   }
   add_filter('acf/load_field/name=_post_title', 'custome_post_title_acf_name');
   
