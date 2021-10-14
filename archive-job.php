@@ -4,7 +4,7 @@
   
   <div class = "row">
     <div class = "col">
-      <h1 class = "py-3 fw-bold">
+      <h1 class = "pt-3 fw-bold">
         الوظائف
       </h1>
     </div>
