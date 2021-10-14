@@ -120,7 +120,7 @@
       wp_register_style('acf-input', false);
       
   } 
-  add_action('wp_enqueue_scripts', 'acf_form_deregister_styles');
+  //add_action('wp_enqueue_scripts', 'acf_form_deregister_styles');
   
   
   function acf_form_bootstrap_styles($args){
@@ -144,7 +144,7 @@
       return $args;
       
   }
- // add_filter('acf/validate_form', 'acf_form_bootstrap_styles');
+ add_filter('acf/validate_form', 'acf_form_bootstrap_styles');
   
   
   function acf_form_fields_bootstrap_styles($field){
