@@ -14,10 +14,10 @@ body{
 /* Start color scema */
 :root{
 
-  --primary   : #435058;
-  --secondary : #DCF763 ;
-  --light     : #F1F2EE;
-  --muted     : #BFB7B6;
+  --primary   : #5D737E;
+  --secondary : #64B6AC ;
+  --light     : #FCFFFD;
+  --muted     : #DAFFEF;
   --blue      : rgb(100,98,242);
 }
 
@@ -32,6 +32,16 @@ a {
 }
 
 .bg-secondary{
+  background : var(--secondary) !important;
+  color : white !important;
+}
+
+.btn-primary{
+  background : var(--primary) !important;
+  color : white !important;
+}
+
+.btn-secondary{
   background : var(--secondary) !important;
 }
 
