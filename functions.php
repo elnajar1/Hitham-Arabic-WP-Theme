@@ -93,7 +93,7 @@
   /*
   * ACF. Frontend form styling ( to look like bootstrap )
   */
-  
+  /*
   // Modify ACF Form Label for Post Title Field
   function custome_post_title_acf_name( $field ) {
      
@@ -106,6 +106,7 @@
      return $field;
   }
   add_filter('acf/load_field/name=_post_title', 'custome_post_title_acf_name');
+  
   
   //styling acf fornted form by bootstrap
   function acf_form_deregister_styles(){
@@ -174,4 +175,4 @@
       
   }
   add_filter('acf/get_field_label', 'acf_form_fields_required_bootstrap_styles');
-  
+  */
