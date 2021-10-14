@@ -161,6 +161,7 @@ card {
 /* End comments.php */
 
 /* Start ACF  */
+/*
 .acf-button.disabled{
     pointer-events: none;
 }
@@ -178,4 +179,5 @@ card {
 .form-control{
   background: var(--light);
 }
+*/
 /* End ACF  */
