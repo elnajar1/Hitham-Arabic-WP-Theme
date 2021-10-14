@@ -6,7 +6,7 @@
   <div class = "row">
     <div class = "col">
      
-      <h1 class="pt-5 h3 fw-bold">
+      <h1 class="py-5 h3 fw-bold">
         أضف المكان الذي تريد له عمال
       </h1>
 
