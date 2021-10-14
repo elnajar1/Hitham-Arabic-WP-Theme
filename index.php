@@ -1,4 +1,4 @@
-<?php get_header(); /*?>
+<?php get_header(); the_content(); /*?>
 
 <div class = "container posts-page">
   
