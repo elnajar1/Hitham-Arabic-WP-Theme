@@ -9,23 +9,12 @@
       <?php if ( have_posts() ) :  while ( have_posts() ) : the_post(); ?>
         <div class="py-2">
           
-          <h1 class="fw-bold">
+          <h1 class="fw-bold single-post-title" >
             <?php the_title(); ?> 
           </h1>
-          
-          <div class="d-flex align-items-center  ">
-            <img src = "<?php echo get_avatar_url(get_the_author_meta('ID'), ['size' => 32] ); ?>" class="rounded-circle" >
-            <h6 class = "fw-bold mx-2"><?php the_author(); ?></h6>
-          </div>
 
           <div class="">
-            <?php the_field('owner_name'); ?>
-            <hr>
-            <?php //acf_form(); ?>
-            <hr>
-            <pre>
-              <?php var_dump(get_fields()); ?>
-            </pre>
+              <?php acf_form(); ?>
           </div>
           
         </div>
@@ -38,12 +27,12 @@
     <div class = "col text-center">
       
       <?php 
-        if ( get_next_post_link('%link','', true) ) :
+        if ( get_next_post_link('%link','') ) :
           //get next post in the same category
-          echo  next_post_link('%link', '<button class ="btn btn-light bg-white text-primary border"> التالي :  %title </button>', true) ;
+          echo  next_post_link('%link', '<button class ="btn btn-light bg-white text-primary border"> التالي :  %title </button>') ;
         else:
           //get previous post in the same category
-          echo  previous_post_link('%link', '<button class ="btn btn-light bg-white text-primary border"> السابق : %title </button>', true ) ;
+          echo  previous_post_link('%link', '<button class ="btn btn-light bg-white text-primary border"> السابق : %title </button>' ) ;
         endif;
         
       ?>
