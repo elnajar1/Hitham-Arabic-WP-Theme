@@ -14,7 +14,7 @@ body{
 /* Start color scema */
 :root{
 
-  --primary   : #279AF1;
+  --primary   : #6622CC;
   --secondary : #C49991 ;
   --light     : #F7F7FF;
   --muted     : #DAFFEF;
@@ -172,6 +172,6 @@ card {
     display:none;
 }
 .form-control{
-  background: rgba(231,231,231,0.714);
+  background: var(--light);
 }
 /* End ACF  */
