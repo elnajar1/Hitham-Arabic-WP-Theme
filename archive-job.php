@@ -13,11 +13,11 @@
                 <?php the_title(); ?> 
               </a>
             </h5>
-            <small class="card-subtitle mb-2 text-muted"><?php the_field('governorate'); ?></small>
+            <small class="card-subtitle mb-2 text-muted"><?php get_field('governorate'); ?></small>
             <p class="card-text">
-              <?php the_field('library'); ?>
+              <?php get_field('library'); ?>
                . 
-              <?php the_field('owner_phone'); ?>
+              <?php get_field('owner_phone'); ?>
             </p>
           </div>
         </div>
