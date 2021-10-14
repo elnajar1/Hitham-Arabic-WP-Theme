@@ -174,7 +174,8 @@ card {
 .acf-error-message{
   background: #fca4a4;
   border-right: 2px solid red;
-  padding: 5px 3px;
+  padding: 3px 0;
+  margin : 3px 0;
 }
 .form-control{
   background: var(--light);
