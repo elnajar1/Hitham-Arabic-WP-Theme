@@ -137,7 +137,7 @@
       
       // Submit button
       if($args['html_submit_button'] == '<input type="submit" class="acf-button button button-primary button-large" value="%s" />')
-          $args['html_submit_button'] = '<input type="submit" class="acf-button button button-primary button-large m-1 btn btn-primary" value="%s" />';
+          $args['html_submit_button'] = '<input type="submit" class="acf-button button button-primary button-large w-50 btn btn-primary" value="%s" />';
       
       return $args;
       
