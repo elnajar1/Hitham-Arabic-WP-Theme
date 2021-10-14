@@ -13,8 +13,12 @@
                 <?php the_title(); ?> 
               </a>
             </h5>
-            <h6 class="card-subtitle mb-2 text-muted"><pre><?php var_dump(get_fields()); ?></pre></h6>
-            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+            <small class="card-subtitle mb-2 text-muted"><?php the_fields('governorate'); ?></small>
+            <p class="card-text">
+              <?php the_fields('library'); ?>
+               . 
+              <?php the_fields('owner_phone'); ?>
+            </p>
           </div>
         </div>
       <?php endwhile; endif; ?>
