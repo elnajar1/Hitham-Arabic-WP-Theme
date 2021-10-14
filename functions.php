@@ -136,8 +136,8 @@
           $args['html_updated_message'] = '<div id="message" class="updated alert alert-success">%s</div>';
       
       // Submit button
-      if($args['html_submit_button'] == '<input type="submit" class="acf-button btn btn-primary btn-large" value="%s" />')
-          $args['html_submit_button'] = '<input type="submit" class="acf-button btn btn-primary btn-large btn btn-primary" value="%s" />';
+      if($args['html_submit_button'] == '<input type="submit" class="acf-button button button-primary button-large" value="%s" />')
+          $args['html_submit_button'] = '<input type="submit" class="acf-button button button-primary button-large m-1 btn btn-primary" value="%s" />';
       
       return $args;
       
