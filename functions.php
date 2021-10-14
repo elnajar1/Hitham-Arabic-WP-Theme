@@ -93,7 +93,7 @@
   /*
   * ACF. Frontend form styling ( to look like bootstrap )
   */
-  /*
+  
   // Modify ACF Form Label for Post Title Field
   function custome_post_title_acf_name( $field ) {
      
@@ -112,11 +112,11 @@
   function acf_form_deregister_styles(){
       
       // Deregister ACF Form style
-      wp_deregister_style('acf-global');
+      //wp_deregister_style('acf-global');
       wp_deregister_style('acf-input');
       
       // Avoid dependency conflict
-      wp_register_style('acf-global', false);
+      //wp_register_style('acf-global', false);
       wp_register_style('acf-input', false);
       
   } 
@@ -175,4 +175,4 @@
       
   }
   add_filter('acf/get_field_label', 'acf_form_fields_required_bootstrap_styles');
-  */
+  
