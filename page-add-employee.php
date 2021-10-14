@@ -7,7 +7,7 @@
     <div class = "col">
     
       <i class=" bi-person-badge pt-3 d-block text-center " style ="font-size: 70px;color: var(--primary)" ></i> 
-      <h1 class="pb-2 rounded h5 text-center fw-bold" style = "background: var(--light) ">
+      <h1 class="py-2 mt-1 rounded h5 text-center fw-bold" style = "background: var(--light) ">
         أضف طلب عمل
       </h1>
 
