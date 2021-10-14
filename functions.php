@@ -96,7 +96,7 @@
   
   // Modify ACF Form Label for Post Title Field
   function custome_post_title_acf_name( $field ) {
-       if( is_page( 'add-job' ) ) { // if on the vendor page
+       if( is_page( 'page-add-job' ) ) { // if on the vendor page
             $field['label'] = 'اسم المحل (المتجر /الدكان) ';
        } elseif( is_page( 'add-employee' ) ) {
             $field['label'] = 'الاسم';
