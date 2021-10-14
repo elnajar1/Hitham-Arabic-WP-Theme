@@ -121,9 +121,10 @@
       
   } 
   add_action('wp_enqueue_scripts', 'acf_form_deregister_styles');
-    
+  
+  /*
   function acf_form_bootstrap_styles($args){
-      /*
+      
       // Before ACF Form
       if(!$args['html_before_fields'])
           $args['html_before_fields'] = '<div class="row">'; // May be .form-row
@@ -131,21 +132,21 @@
       // After ACF Form
       if(!$args['html_after_fields'])
           $args['html_after_fields'] = '</div>';
-      */
+      
       // Success Message
       if($args['html_updated_message'] == '<div id="message" class="updated"><p>%s</p></div>')
           $args['html_updated_message'] = '<div id="message" class="updated alert alert-success">%s</div>';
       
-      /*
       // Submit button
       if($args['html_submit_button'] == '<input type="submit" class="acf-button button button-primary button-large" value="%s" />')
           $args['html_submit_button'] = '<input type="submit" class="acf-button button button-primary button-large btn btn-primary" value="%s" />';
-      */
+      
       return $args;
       
   }
   add_filter('acf/validate_form', 'acf_form_bootstrap_styles');
-
+  */
+  
   function acf_form_fields_bootstrap_styles($field){
       
       // Target ACF Form Front only

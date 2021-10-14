@@ -173,5 +173,6 @@ card {
 }
 .form-control{
   background: var(--light);
+  height: 10px;
 }
 /* End ACF  */
