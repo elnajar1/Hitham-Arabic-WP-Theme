@@ -6,8 +6,8 @@
   <div class = "row">
     <div class = "col">
     
-      <i class="bi bi-shop d-block text-center " style ="font-size: 70px;color: #C97D60 " ></i> 
-      <h1 class="py-3 h5 text-center fw-bold">
+      <i class="bi bi-shop pt-3 d-block text-center " style ="font-size: 70px;color: var(--primary)" ></i> 
+      <h1 class="py-1 h5 text-center fw-bold">
         أضف المكان الذي تريد له عمال
       </h1>
 

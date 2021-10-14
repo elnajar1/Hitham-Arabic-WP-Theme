@@ -11,12 +11,57 @@ body{
   font-family: 'Tajawal', sans-serif;
 } 
 
-a{
-  text-decoration: none ;
-} 
+/* Start color scema */
+:root{
+
+  --primary   : #435058;
+  --secondary : #DCF763 ;
+  --light     : #F1F2EE;
+  --muted     : #BFB7B6;
+  --blue      : rgb(100,98,242);
+}
+
+a {
+    text-decoration: none !important;
+    color: var(--blue) !important;
+}
+
+.bg-primary{
+  background : var(--primary) !important;
+  color : white !important;
+}
+
+.bg-secondary{
+  background : var(--secondary) !important;
+}
+
+.bg-muted{
+  background : var(--muted);
+}
+
+.bg-light{
+  background : var(--light) !important;
+}
+
+.bg-gray{
+  background : var(--secondary);
+}
+
+.border-start{
+  border : white !important;
+}
+
+.text-primary{
+  
+}
+
+.text-secondary{
+  color : var(--secondary) !important;
+}
+
+/* end color scema */
 
 /* Start index.php */
-
 .posts-page .post-container{
   max-width : 500px;
 }
