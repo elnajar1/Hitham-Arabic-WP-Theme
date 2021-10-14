@@ -10,7 +10,7 @@
         أضف المكان الذي تريد له عمال
       </h1>
 
-      <div class="">
+      <div class="border rounded">
         <?php 
           $form_args = array(
               'post_id'	    	=> 'new_post',
