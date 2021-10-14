@@ -113,11 +113,11 @@
       
       // Deregister ACF Form style
       //wp_deregister_style('acf-global');
-      wp_deregister_style('acf-input');
+      //wp_deregister_style('acf-input');
       
       // Avoid dependency conflict
       //wp_register_style('acf-global', false);
-      wp_register_style('acf-input', false);
+      //wp_register_style('acf-input', false);
       
   } 
   add_action('wp_enqueue_scripts', 'acf_form_deregister_styles');
