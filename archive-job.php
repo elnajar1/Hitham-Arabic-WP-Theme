@@ -23,9 +23,11 @@
             </h5>
             <small class="card-subtitle mb-2 text-muted">📍<?php echo get_field('governorate') ; ?></small>
             <p class="card-text text-start" style="direction: ltr"> 
-              🛖<?php echo get_field('Market_type'); ?>( <?php echo get_field('job_type'); ?> ) | 💸<?php echo get_field('salary'); ?>
+              <?php echo get_field('Market_type'); ?>( <?php echo get_field('job_type'); ?> ) | 💸<?php echo get_field('salary'); ?>
+              🛖
               <br>
-              😌<?php echo get_field('owner_name'); ?> . <?php echo get_field('owner_phone'); ?>
+              <?php echo get_field('owner_name'); ?> . <?php echo get_field('owner_phone'); ?>
+              😌
             </p>
           </div>
         </div>
