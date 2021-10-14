@@ -161,7 +161,6 @@ card {
 /* End comments.php */
 
 /* Start ACF  */
-/*
 .acf-button.disabled{
     pointer-events: none;
 }
@@ -173,11 +172,10 @@ card {
     display:none;
 }
 .acf-error-message{
-  background: var(--danger);
+  background: #fca4a4;
   border-right: 2px solid red;
 }
 .form-control{
   background: var(--light);
 }
-*/
 /* End ACF  */
