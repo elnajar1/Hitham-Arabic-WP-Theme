@@ -22,9 +22,11 @@
   	wp_deregister_script( 'jquery' );
     wp_register_script( 'jquery', includes_url( '/js/jquery/jquery.min.js' ), false, NULL, true );
     wp_enqueue_script( 'jquery' );
-  
+    
   	wp_enqueue_script('bootstrap-js', 'https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js', array(), null, true );
   	
+  	wp_enqueue_style( 'main-js', get_template_directory_uri() . '/main.js', array(), null, true) ;
+
   }
   add_action( 'wp_enqueue_scripts', 'hitham_scripts' );
 
@@ -87,3 +89,88 @@
       return __(comments_number( '<h3>No Responses</h3>', '<h3>1 Response</h3>', '<h3>% Responses...</h3>' ), 'genesis');
   }
   //add_filter( 'genesis_title_comments', 'child_title_comments');
+  
+  /*
+  * ACF 
+  */
+  
+  // Modify ACF Form Label for Post Title Field
+  function custome_post_title_acf_name( $field ) {
+       if( is_page( 'add-job' ) ) { // if on the vendor page
+            $field['label'] = 'اسم المحل (المتجر /الدكان) ';
+       } elseif( is_page( 'add-employee' ) ) {
+            $field['label'] = 'الاسم';
+       }else{
+         return $field;
+       }
+  }
+  add_filter('acf/load_field/name=_post_title', 'custome_post_title_acf_name');
+  
+  //styling acf fornted form by bootstrap
+  function acf_form_deregister_styles(){
+      
+      // Deregister ACF Form style
+      wp_deregister_style('acf-global');
+      wp_deregister_style('acf-input');
+      
+      // Avoid dependency conflict
+      wp_register_style('acf-global', false);
+      wp_register_style('acf-input', false);
+      
+  } 
+  add_action('wp_enqueue_scripts', 'acf_form_deregister_styles');
+    
+  function acf_form_bootstrap_styles($args){
+      
+      // Before ACF Form
+      if(!$args['html_before_fields'])
+          $args['html_before_fields'] = '<div class="row">'; // May be .form-row
+      
+      // After ACF Form
+      if(!$args['html_after_fields'])
+          $args['html_after_fields'] = '</div>';
+      
+      // Success Message
+      if($args['html_updated_message'] == '<div id="message" class="updated"><p>%s</p></div>')
+          $args['html_updated_message'] = '<div id="message" class="updated alert alert-success">%s</div>';
+      
+      // Submit button
+      if($args['html_submit_button'] == '<input type="submit" class="acf-button button button-primary button-large" value="%s" />')
+          $args['html_submit_button'] = '<input type="submit" class="acf-button button button-primary button-large btn btn-primary" value="%s" />';
+      
+      return $args;
+      
+  }
+  add_filter('acf/validate_form', 'acf_form_bootstrap_styles');
+
+  function acf_form_fields_bootstrap_styles($field){
+      
+      // Target ACF Form Front only
+      if(is_admin() && !wp_doing_ajax())
+          return $field;
+      
+      // Add .form-group & .col-12 fallback on fields wrappers
+      $field['wrapper']['class'] .= ' form-group col-12';
+      
+      // Add .form-control on fields
+      $field['class'] .= ' form-control';
+      
+      return $field;
+      
+  }
+  add_filter('acf/prepare_field', 'acf_form_fields_bootstrap_styles');
+
+  function acf_form_fields_required_bootstrap_styles($label){
+      
+      // Target ACF Form Front only
+      if(is_admin() && !wp_doing_ajax())
+          return $label;
+      
+      // Add .text-danger
+      $label = str_replace('<span class="acf-required">*</span>', '<span class="acf-required text-danger">*</span>', $label);
+      
+      return $label;
+      
+  }
+  add_filter('acf/get_field_label', 'acf_form_fields_required_bootstrap_styles');
+  

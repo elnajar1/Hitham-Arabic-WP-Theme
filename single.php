@@ -4,37 +4,29 @@
   
   <div class = "row">
     <div class = "col">
-     
-      <?php 
-        if ( have_posts() ) :
-            while ( have_posts() ) :
-                
-                the_post(); ?>
-                <article class="py-2 ">
-                  <div class="py-2">
-                    <h1 class="fw-bold single-post-title">
-                        <?php the_title(); ?> 
-                    </h1>
-                    <div class="card-date">
-                      <?php the_date(); ?>
-                       في  
-                      <?php the_category(', '); ?>
-                      &middot; 
-                    </div>
-                    <?php the_post_thumbnail('', ['class' => 'card-img py-2' ] ) ?>
-                    <div class="">
-                      <?php the_content(); ?>
-                    </div>
-                    <div class="card-tags">
-                      <?php the_tags('<div class="tag"><i class="fa fa-tag"></i>', '', '</div>' ) ?>
-                    </div>
-                  </div>
-                </article>             
-              <?php 
-          endwhile;
-        endif;
-        
-      ?>
+      
+      <?php if ( have_posts() ) :  while ( have_posts() ) : the_post(); ?>
+        <article class="py-2 ">
+          <div class="py-2">
+            <h1 class="fw-bold single-post-title">
+              🥰 <?php the_title(); ?> 
+            </h1>
+            <div class="card-date">
+              <?php the_date(); ?>
+               في  
+              <?php the_category(', '); ?>
+              &middot; 
+            </div>
+            <?php the_post_thumbnail('', ['class' => 'card-img py-2' ] ) ?>
+            <div class="">
+              <?php the_content(); ?>
+            </div>
+            <div class="card-tags">
+              <?php the_tags('<div class="tag"><i class="fa fa-tag"></i>', '', '</div>' ) ?>
+            </div>
+          </div>
+        </article>             
+      <?php endwhile; endif; ?>
 
     </div>
   </div>
@@ -48,7 +40,7 @@
             '', //default
             '', //alt
             array(
-                'class' => 'rounded-circle' 
+                'class' => '' 
               ) 
           ); 
       ?>
