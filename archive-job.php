@@ -15,7 +15,7 @@
             </h5>
             <small class="card-subtitle mb-2 text-muted"><?php echo get_fields['governorate']; ?></small>
             <p class="card-text">
-              <?php echo get_field('library'); ?>
+              <?php var_dump(get_fields()); echo get_field('library'); ?>
                . 
               <?php echo get_field('owner_phone'); ?>
             </p>
