@@ -125,11 +125,11 @@
   function acf_form_bootstrap_styles($args){
       
       // Before ACF Form
-      if(!$args['html_before_fields'])
+      //if(!$args['html_before_fields'])
           $args['html_before_fields'] = '<div class="row">'; // May be .form-row
       
       // After ACF Form
-      if(!$args['html_after_fields'])
+      //if(!$args['html_after_fields'])
           $args['html_after_fields'] = '</div>';
       
       // Success Message
@@ -143,7 +143,7 @@
       return $args;
       
   }
-  //add_filter('acf/validate_form', 'acf_form_bootstrap_styles');
+  add_filter('acf/validate_form', 'acf_form_bootstrap_styles');
 
   function acf_form_fields_bootstrap_styles($field){
       
