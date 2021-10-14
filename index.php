@@ -1,4 +1,4 @@
-<?php get_header(); the_content(); /*?>
+<?php get_header(); ?>
 
 <div class = "container posts-page">
   
@@ -65,4 +65,4 @@
     </div>
   </div>
 </div>
-<?php */ get_footer(); ?>
+<?php  get_footer(); ?>
