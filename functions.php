@@ -123,15 +123,15 @@
   add_action('wp_enqueue_scripts', 'acf_form_deregister_styles');
     
   function acf_form_bootstrap_styles($args){
-      
+      /*
       // Before ACF Form
-      //if(!$args['html_before_fields'])
+      if(!$args['html_before_fields'])
           $args['html_before_fields'] = '<div class="row">'; // May be .form-row
       
       // After ACF Form
-      //if(!$args['html_after_fields'])
+      if(!$args['html_after_fields'])
           $args['html_after_fields'] = '</div>';
-      
+      */
       // Success Message
       if($args['html_updated_message'] == '<div id="message" class="updated"><p>%s</p></div>')
           $args['html_updated_message'] = '<div id="message" class="updated alert alert-success">%s</div>';
