@@ -139,9 +139,9 @@
       // Submit button
       if($args['html_submit_button'] == '<input type="submit" class="acf-button button button-primary button-large" value="%s" />')
           $args['html_submit_button'] = '<input type="submit" class="acf-button button button-primary button-large btn btn-primary" value="%s" />';
-      
-      return $args;
       */
+      return $args;
+      
   }
   add_filter('acf/validate_form', 'acf_form_bootstrap_styles');
 
