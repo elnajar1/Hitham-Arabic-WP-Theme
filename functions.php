@@ -135,8 +135,8 @@
           $args['html_updated_message'] = '<div id="message" class="updated alert alert-success">%s</div>';
       
       // Submit button
-      if($args['html_submit_button'] == '<input type="submit" class="acf-button button button-primary button-large" value="%s" />')
-          $args['html_submit_button'] = '<input type="submit" class="acf-button button button-primary button-large btn btn-primary" value="%s" />';
+      if($args['html_submit_button'] == '<input type="submit" class="acf-button btn btn-primary btn-large" value="%s" />')
+          $args['html_submit_button'] = '<input type="submit" class="acf-button btn btn-primary btn-large btn btn-primary" value="%s" />';
       
       return $args;
       
@@ -150,7 +150,7 @@
           return $field;
       
       // Add .form-group & .col-12 fallback on fields wrappers
-      $field['wrapper']['class'] .= ' form-group col-12';
+      $field['wrapper']['class'] .= ' form-group col-12 mb-3';
       
       // Add .form-control on fields
       $field['class'] .= ' form-control';
