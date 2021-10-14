@@ -117,6 +117,6 @@ card {
     display:none;
 }
 .form-control{
-  background: #f5f5f5;
+  background: rgba(231,231,231,0.714);
 }
 /* End ACF  */

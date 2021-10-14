@@ -5,12 +5,13 @@
   
   <div class = "row">
     <div class = "col">
-     
-      <h1 class="py-5 h3 fw-bold">
+    
+      <i class="bi bi-shop d-block m-auto" style ="font-size: 70px" ></i> 
+      <h1 class="py-3 h5 text-center fw-bold">
         أضف المكان الذي تريد له عمال
       </h1>
 
-      <div class="border rounded">
+      <div class="p-2 border rounded m-auto" style = "max-width: 500px">
         <?php 
           $form_args = array(
               'post_id'	    	=> 'new_post',
