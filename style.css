@@ -116,4 +116,7 @@ card {
     background: transparent url(/wp-admin/images/spinner.gif) no-repeat 50% 50%;
     display:none;
 }
+.form-control{
+  background: #f4f4f4;
+}
 /* End ACF  */

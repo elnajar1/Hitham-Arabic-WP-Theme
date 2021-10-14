@@ -91,7 +91,7 @@
   //add_filter( 'genesis_title_comments', 'child_title_comments');
   
   /*
-  * ACF 
+  * ACF. Frontend form styling ( to look like bootstrap )
   */
   
   // Modify ACF Form Label for Post Title Field
@@ -137,7 +137,7 @@
       
       // Submit button
       if($args['html_submit_button'] == '<input type="submit" class="acf-button button button-primary button-large" value="%s" />')
-          $args['html_submit_button'] = '<input type="submit" class="acf-button button button-primary button-large w-50 btn btn-primary" value="%s" />';
+          $args['html_submit_button'] = '<input type="submit" class="acf-button button button-primary button-large btn btn-primary" value="%s" />';
       
       return $args;
       
@@ -151,10 +151,10 @@
           return $field;
       
       // Add .form-group & .col-12 fallback on fields wrappers
-      $field['wrapper']['class'] .= ' form-group col-12 mb-3';
+      $field['wrapper']['class'] .= 'form-group col-12 mb-3';
       
       // Add .form-control on fields
-      $field['class'] .= ' form-control';
+      $field['class'] .= 'form-control';
       
       return $field;
       
