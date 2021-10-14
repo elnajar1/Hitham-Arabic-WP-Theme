@@ -171,6 +171,10 @@ card {
     background: transparent url(/wp-admin/images/spinner.gif) no-repeat 50% 50%;
     display:none;
 }
+.acf-error-message{
+  background: var(--danger);
+  border-right: 2px solid red;
+}
 .form-control{
   background: var(--light);
 }

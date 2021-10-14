@@ -7,7 +7,7 @@
     <div class = "col">
     
       <i class="bi bi-shop pt-3 d-block text-center " style ="font-size: 70px;color: var(--primary)" ></i> 
-      <h1 class="py-2 rounded h5 text-center fw-bold" style = "background: var(--light) ">
+      <h1 class="pb-2 rounded h5 text-center fw-bold" style = "background: var(--light) ">
         أضف المكان الذي تريد له عمال
       </h1>
 
