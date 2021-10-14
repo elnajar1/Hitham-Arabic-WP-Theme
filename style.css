@@ -173,8 +173,8 @@ card {
 }
 .acf-error-message{
   background: #fca4a4;
-  border-right: 2px solid red;
-  padding: 3px 0;
+  border-right: 3px solid red;
+  padding: 3px 2px;
   margin : 3px 0;
 }
 .form-control{
