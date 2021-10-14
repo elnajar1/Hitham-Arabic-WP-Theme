@@ -112,12 +112,12 @@
   function acf_form_deregister_styles(){
       
       // Deregister ACF Form style
-      //wp_deregister_style('acf-global');
-      //wp_deregister_style('acf-input');
+      wp_deregister_style('acf-global');
+      wp_deregister_style('acf-input');
       
       // Avoid dependency conflict
-      //wp_register_style('acf-global', false);
-      //wp_register_style('acf-input', false);
+      wp_register_style('acf-global', false);
+      wp_register_style('acf-input', false);
       
   } 
   add_action('wp_enqueue_scripts', 'acf_form_deregister_styles');
@@ -143,7 +143,7 @@
       return $args;
       
   }
-  add_filter('acf/validate_form', 'acf_form_bootstrap_styles');
+  //add_filter('acf/validate_form', 'acf_form_bootstrap_styles');
 
   function acf_form_fields_bootstrap_styles($field){
       
