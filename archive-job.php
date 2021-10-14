@@ -15,9 +15,9 @@
             </h5>
             <small class="card-subtitle mb-2 text-muted"><?php echo get_field('governorate') ; ?></small>
             <p class="card-text">
-              <?php echo get_field('Market_type'); ?>( <?php echo get_field('job_type'); ?> ) | <?php echo get_field('salary'); ?>
+              ـ <?php echo get_field('Market_type'); ?>( <?php echo get_field('job_type'); ?> ) | <?php echo get_field('salary'); ?>
               <br>
-              <?php echo get_field('owner_name'); ?> . <?php echo get_field('owner_phone'); ?>
+              ـ <?php echo get_field('owner_name'); ?> . <?php echo get_field('owner_phone'); ?>
             </p>
           </div>
         </div>
