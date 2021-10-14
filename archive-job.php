@@ -13,7 +13,7 @@
                 <?php the_title(); ?> 
               </a>
             </h5>
-            <small class="card-subtitle mb-2 text-muted"><?php echo get_field('governorate'); ?></small>
+            <small class="card-subtitle mb-2 text-muted"><?php echo get_fields['governorate']; ?></small>
             <p class="card-text">
               <?php echo get_field('library'); ?>
                . 
