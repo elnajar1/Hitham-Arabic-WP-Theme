@@ -20,8 +20,8 @@
           			'post_status'	=> 'publish'
           		), 
               'field_groups' => ['group_6163ccc5db389'], 
-              'updated_message' => '<div class ="alert alert-success py-3" > تم ارسال الطلب بحمدالله بنجاح، شكرا لك </div>', 
-              'submit_value' => 'أرسال الطلب', 
+              'updated_message' => ' تم ارسال الطلب بحمدالله بنجاح، شكرا لك', 
+              'submit_value' => 'أرسال ', 
               
             );
           acf_form($form_args); 
