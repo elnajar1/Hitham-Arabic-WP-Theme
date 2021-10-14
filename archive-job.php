@@ -1,4 +1,3 @@
-<?php acf_form_head(); ?>
 <?php get_header(); ?>
 
 <div class = "container ">
@@ -14,7 +13,7 @@
                 <?php the_title(); ?> 
               </a>
             </h5>
-            <h6 class="card-subtitle mb-2 text-muted"><?php the_field('government'); ?></h6>
+            <h6 class="card-subtitle mb-2 text-muted"><?php var_dump(the_fields()); ?></h6>
             <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
           </div>
         </div>
