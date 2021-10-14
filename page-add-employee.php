@@ -7,7 +7,7 @@
     <div class = "col">
     
       <i class=" bi-person-badge pt-3 d-block text-center " style ="font-size: 70px;color: var(--primary)" ></i> 
-      <h1 class="py-1 h5 text-center fw-bold">
+      <h1 class="py-1 h5 text-center fw-bold" style = "background: var(--light) ">
         أضف طلب عمل
       </h1>
 
@@ -20,7 +20,7 @@
           			'post_type'		=> 'employee',
           			'post_status'	=> 'publish'
           		), 
-              'field_groups' => ['group_6163ccc5db389'], 
+              'field_groups' => ['group_6167eb502a920'], 
               'updated_message' => ' تم ارسال الطلب بحمدالله بنجاح، شكرا لك', 
               'submit_value' => 'أرسال ', 
               
