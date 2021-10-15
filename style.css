@@ -50,7 +50,7 @@ a {
 }
 
 .bg-light{
-  background : var(--light) !important;
+  /*background : var(--light) !important;*/
 }
 
 .bg-gray{
